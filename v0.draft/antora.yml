@@ -1,0 +1,6 @@
+name: dp-buurtnet
+version: v0.draft
+title: Buurtnet
+nav:
+- modules/ROOT/nav.adoc
+- modules/schema/nav.adoc

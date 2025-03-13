@@ -1,0 +1,554 @@
+= `BuurtnetDataSet`
+:toclevels: 4
+
+
++++A single instance of a published dataset.+++
+
+
+[cols="h,3",width=65%]
+|===
+| Type
+| Class
+
+| URI
+| `this:BuurtnetDataSet`
+
+
+
+
+|===
+
+== Class hierarchy
+* *`BuurtnetDataSet`*
+
+
+== Slots
+
+
+
+.Associated classes
+[d2,svg,theme=4]
+----
+vars: {
+  d2-config: {
+    pad: 20
+  }
+}
+BuurtnetDataSet {
+  style {
+    fill: "#cccccc"
+    shadow: true
+  }
+}
+
+
+
+GeographicalRegion {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+SubGeographicalRegion {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+Substation {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+CoordinateSystem {
+  style {
+    fill: "#d1e7c2"
+    shadow: true
+  }
+}
+
+
+
+PowerTransformer {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+Terminal {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+TopologicalNode {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+EnergyConsumer {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+Analog {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+ActivePowerLimit {
+  style {
+    fill: "#eccfcb"
+    shadow: true
+  }
+}
+
+
+
+
+BuurtnetDataSet -> GeographicalRegion: geographical_regions
+
+
+BuurtnetDataSet -> SubGeographicalRegion: sub_geographical_regions
+
+
+BuurtnetDataSet -> Substation: substations
+
+
+BuurtnetDataSet -> CoordinateSystem: coordinate_systems
+
+
+BuurtnetDataSet -> PowerTransformer: power_transformers
+
+
+BuurtnetDataSet -> Terminal: terminals
+
+
+BuurtnetDataSet -> TopologicalNode: topological_nodes
+
+
+BuurtnetDataSet -> EnergyConsumer: energy_consumers
+
+
+BuurtnetDataSet -> Analog: analogs
+
+
+BuurtnetDataSet -> ActivePowerLimit: active_power_limits
+
+
+legend: "" {
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+  grid-rows: 3
+  grid-columns: 2
+  grid-gap: 10
+  near: bottom-right
+  iec61968_color: "" {
+    style: {
+      fill: "#d1e7c2"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61968_text: "IEC61968 (Enterprise)" {
+    shape: text
+  }
+  iec61970_color: "" {
+    style: {
+      fill: "#eccfcb"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec61970_text: "IEC61970 (Grid)" {
+    shape: text
+  }
+  iec62325_color: "" {
+    style: {
+      fill: "#fffbef"
+      stroke: black
+      stroke-width: 1
+    }
+    width: 10
+    height: 10
+  }
+  iec62325_text: "IEC62325 (Market)" {
+    shape: text
+  }
+}
+----
+
+
+[cols="3,1,3,6",width=100%]
+|===
+| Name | Cardinality | Type | Description
+
+| <<conforms_to,`conforms_to`>>
+| 1
+| n/a
+| n/a
+
+| <<contact_point,`contact_point`>>
+| 1
+| n/a
+| n/a
+
+| <<identifier,`identifier`>>
+| 1
+| n/a
+| n/a
+
+| <<release_date,`release_date`>>
+| 1
+| n/a
+| n/a
+
+| <<version,`version`>>
+| 1
+| n/a
+| n/a
+
+| <<active_power_limits,`active_power_limits`>>
+| 1..*
+| xref::class/ActivePowerLimit.adoc[`ActivePowerLimit`]
+| +++All instances of ActivePowerLimits+++
+
+| <<analogs,`analogs`>>
+| 1..*
+| xref::class/Analog.adoc[`Analog`]
+| +++All instances of Analogs+++
+
+| <<coordinate_systems,`coordinate_systems`>>
+| 1..*
+| xref::class/CoordinateSystem.adoc[`CoordinateSystem`]
+| +++All instances of CoordinateSystems+++
+
+| <<energy_consumers,`energy_consumers`>>
+| 1..*
+| xref::class/EnergyConsumer.adoc[`EnergyConsumer`]
+| +++All instances of EnergyConsumers+++
+
+| <<geographical_regions,`geographical_regions`>>
+| 1..*
+| xref::class/GeographicalRegion.adoc[`GeographicalRegion`]
+| +++All instances of GeographicalRegions+++
+
+| <<power_transformers,`power_transformers`>>
+| 1..*
+| xref::class/PowerTransformer.adoc[`PowerTransformer`]
+| +++All instances of PowerTransformers+++
+
+| <<sub_geographical_regions,`sub_geographical_regions`>>
+| 1..*
+| xref::class/SubGeographicalRegion.adoc[`SubGeographicalRegion`]
+| +++All instances of SubGeographicalRegions+++
+
+| <<substations,`substations`>>
+| 1..*
+| xref::class/Substation.adoc[`Substation`]
+| +++All instances of Substations+++
+
+| <<terminals,`terminals`>>
+| 1..*
+| xref::class/Terminal.adoc[`Terminal`]
+| +++All instances of Terminals+++
+
+| <<topological_nodes,`topological_nodes`>>
+| 1..*
+| xref::class/TopologicalNode.adoc[`TopologicalNode`]
+| +++All instances of TopologicalNodes+++
+|===
+
+'''
+
+
+//[discrete]
+[#active_power_limits]
+=== `active_power_limits`
++++All instances of ActivePowerLimits+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.activePowerLimits`
+| Cardinality
+| 1..*
+| Type
+| xref::class/ActivePowerLimit.adoc[`ActivePowerLimit`]
+
+
+|===
+
+//[discrete]
+[#analogs]
+=== `analogs`
++++All instances of Analogs+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.analogs`
+| Cardinality
+| 1..*
+| Type
+| xref::class/Analog.adoc[`Analog`]
+
+
+|===
+
+//[discrete]
+[#conforms_to]
+=== `conforms_to`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/conformsTo[`dct:conformsTo`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#contact_point]
+=== `contact_point`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/contactPoint[`dct:contactPoint`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#coordinate_systems]
+=== `coordinate_systems`
++++All instances of CoordinateSystems+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.coordinateSystems`
+| Cardinality
+| 1..*
+| Type
+| xref::class/CoordinateSystem.adoc[`CoordinateSystem`]
+
+
+|===
+
+//[discrete]
+[#energy_consumers]
+=== `energy_consumers`
++++All instances of EnergyConsumers+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.energyConsumers`
+| Cardinality
+| 1..*
+| Type
+| xref::class/EnergyConsumer.adoc[`EnergyConsumer`]
+
+
+|===
+
+//[discrete]
+[#geographical_regions]
+=== `geographical_regions`
++++All instances of GeographicalRegions+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.geographicalRegions`
+| Cardinality
+| 1..*
+| Type
+| xref::class/GeographicalRegion.adoc[`GeographicalRegion`]
+
+
+|===
+
+//[discrete]
+[#identifier]
+=== `identifier`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/identifier[`dct:identifier`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#power_transformers]
+=== `power_transformers`
++++All instances of PowerTransformers+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.powerTransformers`
+| Cardinality
+| 1..*
+| Type
+| xref::class/PowerTransformer.adoc[`PowerTransformer`]
+
+
+|===
+
+//[discrete]
+[#release_date]
+=== `release_date`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://purl.org/dc/terms/issued[`dct:issued`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+//[discrete]
+[#sub_geographical_regions]
+=== `sub_geographical_regions`
++++All instances of SubGeographicalRegions+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.subGeographicalRegions`
+| Cardinality
+| 1..*
+| Type
+| xref::class/SubGeographicalRegion.adoc[`SubGeographicalRegion`]
+
+
+|===
+
+//[discrete]
+[#substations]
+=== `substations`
++++All instances of Substations+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.substations`
+| Cardinality
+| 1..*
+| Type
+| xref::class/Substation.adoc[`Substation`]
+
+
+|===
+
+//[discrete]
+[#terminals]
+=== `terminals`
++++All instances of Terminals+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.terminals`
+| Cardinality
+| 1..*
+| Type
+| xref::class/Terminal.adoc[`Terminal`]
+
+
+|===
+
+//[discrete]
+[#topological_nodes]
+=== `topological_nodes`
++++All instances of TopologicalNodes+++
+
+[cols="h,4",width=65%]
+|===
+| URI
+| `this:BuurtnetDataSet.topologicalNodes`
+| Cardinality
+| 1..*
+| Type
+| xref::class/TopologicalNode.adoc[`TopologicalNode`]
+
+
+|===
+
+//[discrete]
+[#version]
+=== `version`
+
+
+[cols="h,4",width=65%]
+|===
+| URI
+| http://www.w3.org/2002/07/owl#versionInfo[`owl:versionInfo`]
+| Cardinality
+| 1
+| Type
+| n/a
+
+
+|===
+
+

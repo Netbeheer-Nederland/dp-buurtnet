@@ -1,0 +1,138 @@
+[.truncate]
+* Information model
+** xref::index.adoc[Index]
+** Classes
+*** xref::class/BuurtnetDataSet.adoc[`BuurtnetDataSet` (root)]
+
+*** xref::class/ACDCTerminal.adoc[`ACDCTerminal`]
+
+
+
+*** xref::class/ActivePowerLimit.adoc[`ActivePowerLimit`]
+
+
+
+*** xref::class/Analog.adoc[`Analog`]
+
+
+
+*** xref::class/AnalogValue.adoc[`AnalogValue`]
+
+
+
+
+*** xref::class/ConductingEquipment.adoc[`ConductingEquipment`]
+
+
+
+*** xref::class/ConnectivityNodeContainer.adoc[`ConnectivityNodeContainer`]
+
+
+
+*** xref::class/CoordinateSystem.adoc[`CoordinateSystem`]
+
+
+
+*** xref::class/EnergyConnection.adoc[`EnergyConnection`]
+
+
+
+*** xref::class/EnergyConsumer.adoc[`EnergyConsumer`]
+
+
+
+*** xref::class/Equipment.adoc[`Equipment`]
+
+
+
+*** xref::class/EquipmentContainer.adoc[`EquipmentContainer`]
+
+
+
+*** xref::class/GeographicalRegion.adoc[`GeographicalRegion`]
+
+
+
+*** xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+
+
+
+*** xref::class/IOPoint.adoc[`IOPoint`]
+
+
+
+*** xref::class/Location.adoc[`Location`]
+
+
+
+*** xref::class/Measurement.adoc[`Measurement`]
+
+
+
+*** xref::class/MeasurementValue.adoc[`MeasurementValue`]
+
+
+
+*** xref::class/OperationalLimit.adoc[`OperationalLimit`]
+
+
+
+*** xref::class/OperationalLimitSet.adoc[`OperationalLimitSet`]
+
+
+
+*** xref::class/OperationalLimitType.adoc[`OperationalLimitType`]
+
+
+
+*** xref::class/PositionPoint.adoc[`PositionPoint`]
+
+
+
+*** xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
+
+
+
+*** xref::class/PowerTransformer.adoc[`PowerTransformer`]
+
+
+
+*** xref::class/PowerTransformerEnd.adoc[`PowerTransformerEnd`]
+
+
+
+*** xref::class/StreetAddress.adoc[`StreetAddress`]
+
+
+
+*** xref::class/StreetDetail.adoc[`StreetDetail`]
+
+
+
+*** xref::class/SubGeographicalRegion.adoc[`SubGeographicalRegion`]
+
+
+
+*** xref::class/Substation.adoc[`Substation`]
+
+
+
+*** xref::class/Terminal.adoc[`Terminal`]
+
+
+
+*** xref::class/TopologicalNode.adoc[`TopologicalNode`]
+
+
+
+*** xref::class/TransformerEnd.adoc[`TransformerEnd`]
+
+
+
+** CIM data types
+*** xref::class/ActivePower.adoc[`ActivePower`]
+
+
+** Enumerations
+*** xref::enumeration/UnitMultiplier.adoc[`UnitMultiplier`]
+*** xref::enumeration/UnitSymbol.adoc[`UnitSymbol`]
