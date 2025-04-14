@@ -2,137 +2,145 @@
 * Information model
 ** xref::index.adoc[Index]
 ** Classes
-*** xref::class/BuurtnetDataSet.adoc[`BuurtnetDataSet` (root)]
+*** xref::class/BuurtnetDataSet.adoc[BuurtnetDataSet (root)]
 
-*** xref::class/ACDCTerminal.adoc[`ACDCTerminal`]
+*** xref::class/ACDCTerminal.adoc[ACDCTerminal]
 
 
 
-*** xref::class/ActivePowerLimit.adoc[`ActivePowerLimit`]
+*** xref::class/ActivePowerLimit.adoc[ActivePowerLimit]
 
 
 
-*** xref::class/Analog.adoc[`Analog`]
+*** xref::class/Analog.adoc[Analog]
 
 
 
-*** xref::class/AnalogValue.adoc[`AnalogValue`]
+*** xref::class/AnalogValue.adoc[AnalogValue]
 
 
 
 
-*** xref::class/ConductingEquipment.adoc[`ConductingEquipment`]
+*** xref::class/ConductingEquipment.adoc[ConductingEquipment]
 
 
 
-*** xref::class/ConnectivityNodeContainer.adoc[`ConnectivityNodeContainer`]
+*** xref::class/ConnectivityNodeContainer.adoc[ConnectivityNodeContainer]
 
 
 
-*** xref::class/CoordinateSystem.adoc[`CoordinateSystem`]
+*** xref::class/CoordinateSystem.adoc[CoordinateSystem]
 
 
 
-*** xref::class/EnergyConnection.adoc[`EnergyConnection`]
+*** xref::class/EnergyConnection.adoc[EnergyConnection]
 
 
 
-*** xref::class/EnergyConsumer.adoc[`EnergyConsumer`]
+*** xref::class/EnergyConsumer.adoc[EnergyConsumer]
 
 
 
-*** xref::class/Equipment.adoc[`Equipment`]
+*** xref::class/Equipment.adoc[Equipment]
 
 
 
-*** xref::class/EquipmentContainer.adoc[`EquipmentContainer`]
+*** xref::class/EquipmentContainer.adoc[EquipmentContainer]
 
 
 
-*** xref::class/GeographicalRegion.adoc[`GeographicalRegion`]
+*** xref::class/GeographicalRegion.adoc[GeographicalRegion]
 
 
 
-*** xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
+*** xref::class/IdentifiedObject.adoc[IdentifiedObject]
 
 
 
-*** xref::class/IOPoint.adoc[`IOPoint`]
+*** xref::class/IOPoint.adoc[IOPoint]
 
 
 
-*** xref::class/Location.adoc[`Location`]
+*** xref::class/Location.adoc[Location]
 
 
 
-*** xref::class/Measurement.adoc[`Measurement`]
+*** xref::class/MarketEvaluationPoint.adoc[MarketEvaluationPoint]
 
 
 
-*** xref::class/MeasurementValue.adoc[`MeasurementValue`]
+*** xref::class/Measurement.adoc[Measurement]
 
 
 
-*** xref::class/OperationalLimit.adoc[`OperationalLimit`]
+*** xref::class/MeasurementValue.adoc[MeasurementValue]
 
 
 
-*** xref::class/OperationalLimitSet.adoc[`OperationalLimitSet`]
+*** xref::class/OperationalLimit.adoc[OperationalLimit]
 
 
 
-*** xref::class/OperationalLimitType.adoc[`OperationalLimitType`]
+*** xref::class/OperationalLimitSet.adoc[OperationalLimitSet]
 
 
 
-*** xref::class/PositionPoint.adoc[`PositionPoint`]
+*** xref::class/OperationalLimitType.adoc[OperationalLimitType]
 
 
 
-*** xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
+*** xref::class/PositionPoint.adoc[PositionPoint]
 
 
 
-*** xref::class/PowerTransformer.adoc[`PowerTransformer`]
+*** xref::class/PowerSystemResource.adoc[PowerSystemResource]
 
 
 
-*** xref::class/PowerTransformerEnd.adoc[`PowerTransformerEnd`]
+*** xref::class/PowerTransformer.adoc[PowerTransformer]
 
 
 
-*** xref::class/StreetAddress.adoc[`StreetAddress`]
+*** xref::class/PowerTransformerEnd.adoc[PowerTransformerEnd]
 
 
 
-*** xref::class/StreetDetail.adoc[`StreetDetail`]
+*** xref::class/StreetAddress.adoc[StreetAddress]
 
 
 
-*** xref::class/SubGeographicalRegion.adoc[`SubGeographicalRegion`]
+*** xref::class/StreetDetail.adoc[StreetDetail]
 
 
 
-*** xref::class/Substation.adoc[`Substation`]
+*** xref::class/SubGeographicalRegion.adoc[SubGeographicalRegion]
 
 
 
-*** xref::class/Terminal.adoc[`Terminal`]
+*** xref::class/Substation.adoc[Substation]
 
 
 
-*** xref::class/TopologicalNode.adoc[`TopologicalNode`]
+*** xref::class/Terminal.adoc[Terminal]
 
 
 
-*** xref::class/TransformerEnd.adoc[`TransformerEnd`]
+*** xref::class/TopologicalNode.adoc[TopologicalNode]
+
+
+
+*** xref::class/TransformerEnd.adoc[TransformerEnd]
+
+
+
+*** xref::class/UsagePoint.adoc[UsagePoint]
 
 
 
 ** CIM data types
-*** xref::class/ActivePower.adoc[`ActivePower`]
+*** xref::class/ActivePower.adoc[ActivePower]
 
 
 ** Enumerations
-*** xref::enumeration/UnitMultiplier.adoc[`UnitMultiplier`]
-*** xref::enumeration/UnitSymbol.adoc[`UnitSymbol`]
+*** xref::enumeration/UnitMultiplier.adoc[UnitMultiplier]
+*** xref::enumeration/UnitSymbol.adoc[UnitSymbol]

@@ -1,8 +1,8 @@
-= `ConnectivityNodeContainer`
+= `MarketEvaluationPoint`
 :toclevels: 4
 
 
-+++A base class for all objects that may contain connectivity nodes or topological nodes.+++
++++The identification of an entity where energy products are measured or computed.+++
 
 
 [cols="h,3",width=65%]
@@ -11,11 +11,28 @@
 | Class
 
 | URI
-| `cim:ConnectivityNodeContainer`
+| `cim:MarketEvaluationPoint`
 
 
 | CIM standard (perspective)
-| IEC61970 (Grid)
+| IEC62325 (Market)
+
+
+| Glossary mappings
+a|
+
+[cols="1,5"]
+!===
+! Mapping type ! Term
+
+! http://www.w3.org/2004/02/skos/core#exactMatch[`skos:exactMatch`]
+a! 
+
+https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/aansluiting[`nbnl:aansluiting`]
+
+
+
+!===
 
 
 
@@ -23,104 +40,25 @@
 
 == Class hierarchy
 * xref::class/IdentifiedObject.adoc[`IdentifiedObject`]
-** xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
-*** *`ConnectivityNodeContainer`*
- **** xref::class/EquipmentContainer.adoc[`EquipmentContainer`]
+** xref::class/UsagePoint.adoc[`UsagePoint`]
+*** *`MarketEvaluationPoint`*
 
 
 == Slots
 
 
 
-.Associated classes
-[d2,svg,theme=4]
-----
-vars: {
-  d2-config: {
-    pad: 20
-  }
-}
-ConnectivityNodeContainer {
-  style {
-    fill: "#eccfcb"
-    shadow: true
-  }
-}
-
-
-
-Location {
-  style {
-    fill: "#d1e7c2"
-    shadow: true
-  }
-}
-
-
-
-
-ConnectivityNodeContainer -> Location: location
-
-
-legend: "" {
-  style: {
-    fill: transparent
-    stroke: transparent
-  }
-  grid-rows: 3
-  grid-columns: 2
-  grid-gap: 10
-  near: bottom-right
-  iec61968_color: "" {
-    style: {
-      fill: "#d1e7c2"
-      stroke: black
-      stroke-width: 1
-    }
-    width: 10
-    height: 10
-  }
-  iec61968_text: "IEC61968 (Enterprise)" {
-    shape: text
-  }
-  iec61970_color: "" {
-    style: {
-      fill: "#eccfcb"
-      stroke: black
-      stroke-width: 1
-    }
-    width: 10
-    height: 10
-  }
-  iec61970_text: "IEC61970 (Grid)" {
-    shape: text
-  }
-  iec62325_color: "" {
-    style: {
-      fill: "#fffbef"
-      stroke: black
-      stroke-width: 1
-    }
-    width: 10
-    height: 10
-  }
-  iec62325_text: "IEC62325 (Market)" {
-    shape: text
-  }
-}
-----
-
 
 [cols="1,1,2,1",width=100%]
 |===
 | Name | Type | Description | Inherited from
 
-| <<location,`location`>>
-//| [[slots_table.location]]<<location,`location`>>
+| <<european_article_number_ean,`european_article_number_ean`>>
+//| [[slots_table.european_article_number_ean]]<<european_article_number_ean,`european_article_number_ean`>>
 | 0..1 +
-xref::class/Location.adoc[`Location`]
-| +++Location of this power system resource.+++
-| xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
+https://w3id.org/linkml/String[`string`]
+| +++The attribute is used for an exchange of the EAN code (European Article Number). The length of the string is 18 characters...+++
+| xref::class/UsagePoint.adoc[`UsagePoint`]
 
 | <<description,`description`>>
 //| [[slots_table.description]]<<description,`description`>>
@@ -170,22 +108,39 @@ https://w3id.org/linkml/String[`string`]
 
 
 //[discrete]
-[#location]
-=== `location`
-+++Location of this power system resource.+++
+[#european_article_number_ean]
+=== `european_article_number_ean`
++++The attribute is used for an exchange of the EAN code (European Article Number). The length of the string is 18 characters as defined by the EAN code. For details on the EAN scheme please refer to the _Codebesluit toekenning EAN-codes elektriciteit_+++
 
 
 [cols="h,4",width=65%]
 |===
 | URI
-| `cim:PowerSystemResource.Location`
+| http://iec.ch/TC57/CIM100-Netherlands#IdentifiedObject.europeanArticleNumberEAN[`nl:IdentifiedObject.europeanArticleNumberEAN`]
 | Cardinality
 | 0..1
 | Type
-| xref::class/Location.adoc[`Location`]
+| https://w3id.org/linkml/String[`string`]
 
 | Inherited from
-| xref::class/PowerSystemResource.adoc[`PowerSystemResource`]
+| xref::class/UsagePoint.adoc[`UsagePoint`]
+
+
+| Glossary mappings
+a|
+
+[cols="1,5"]
+!===
+! Mapping type ! Term
+
+! http://www.w3.org/2004/02/skos/core#exactMatch[`skos:exactMatch`]
+a! 
+
+https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/europeanArticleNumberEAN[`nbnl:europeanArticleNumberEAN`]
+
+
+
+!===
 
 
 |===
@@ -193,7 +148,7 @@ https://w3id.org/linkml/String[`string`]
 ////
 [.text-left]
 --
-<<slots_table.location,&#10548;>>
+<<slots_table.european_article_number_ean,&#10548;>>
 --
 ////
 
@@ -234,4 +189,18 @@ For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is map
 == Used by
 
 
-This class is not used by any other classes as the range of a slot.
+[cols="1,1",width=65%]
+|===
+| Source class | Slot name
+
+
+
+| xref::class/BuurtnetDataSet.adoc[`BuurtnetDataSet`] | xref::class/BuurtnetDataSet.adoc#market_evaluation_points[`market_evaluation_points`]
+
+
+
+| xref::class/Equipment.adoc[`Equipment`] | xref::class/Equipment.adoc#usage_points[`usage_points`]
+
+
+|===
+

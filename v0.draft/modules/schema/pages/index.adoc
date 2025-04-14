@@ -56,6 +56,9 @@ EnergyConsumer.pfixed, .qfixed, .pfixedPct and .qfixedPct have meaning only if t
 | xref::class/Location.adoc[`Location`]
 | +++The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more position points (coordinates) in a given coordinate system.+++
 
+| xref::class/MarketEvaluationPoint.adoc[`MarketEvaluationPoint`]
+| +++The identification of an entity where energy products are measured or computed.+++
+
 | xref::class/Measurement.adoc[`Measurement`]
 | +++A Measurement represents any measured, calculated or non-measured non-calculated quantity. Any piece of equipment may contain Measurements, e.g. a substation may have temperature measurements and door open indications, a transformer may have oil temperature and tank pressure measurements, a bay may contain a number of power flow measurements and a Breaker may contain a switch status measurement. 
 The PSR - Measurement association is intended to capture this use of Measurement and is included in the naming hierarchy based on EquipmentContainer. The naming hierarchy typically has Measurements as leaves, e.g. Substation-VoltageLevel-Bay-Switch-Measurement.
@@ -119,6 +122,9 @@ For a planning model, switch statuses are not used to form topological nodes. In
 
 | xref::class/TransformerEnd.adoc[`TransformerEnd`]
 | +++A conducting connection point of a power transformer. It corresponds to a physical transformer winding terminal.  In earlier CIM versions, the TransformerWinding class served a similar purpose, but this class is more flexible because it associates to terminal but is not a specialization of ConductingEquipment.+++
+
+| xref::class/UsagePoint.adoc[`UsagePoint`]
+| +++Logical or physical point in the network to which readings or events may be attributed. Used at the place where a physical or virtual meter may be located; however, it is not required that a meter be present.+++
 
 |===
 

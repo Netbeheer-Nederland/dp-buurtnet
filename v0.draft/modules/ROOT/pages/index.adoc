@@ -1,5 +1,15 @@
 = Buurtnet
 
+The Buurtnet data product supports the following use cases by providing all
+required information:
+
+* Activate residents to balance their energy consumption and generation based
+on available data. By promoting self-organization and behavior change, we aim
+to reduce peak load and decrease voltage issues, thereby bridging the waiting
+time for neighbourhood-specific grid reinforcement.
+* Provide customers in critical neighborhoods with insight and actionable
+perspectives.
+
 .Data Product
 [d2,svg,theme=4]
 ----
@@ -27,7 +37,7 @@ ActivePowerLimit.class: grid
 Analog.class: grid
 OperationalLimitSet.class: grid
 
-BuurtaanpakDataSet.class: dataset
+BuurtnetDataSet.class: dataset
 GeographicalRegion.class: enterprise
 SubGeographicalRegion.class: enterprise
 Substation.class: grid
@@ -45,7 +55,13 @@ TopologicalNode.class: grid
 Location.class: enterprise
 EnergyConsumer.class: grid
 
-BuurtaanpakDataSet -> GeographicalRegion: "geographical_regions"
+15.class: empty
+16.class: empty
+17.class: empty
+18.class: empty
+MarketEvaluationPoint.class: market
+
+BuurtnetDataSet -> GeographicalRegion: "geographical_regions"
 GeographicalRegion -> SubGeographicalRegion: "regions"
 SubGeographicalRegion -> Substation: "substations"
 Substation -> PowerTransformer: "equipments"
@@ -69,6 +85,7 @@ TopologicalNode <-> EnergyConsumer: {
   source-arrowhead.shape: circle
 }
 EnergyConsumer -> Location: "location"
+EnergyConsumer -> MarketEvaluationPoint: "usage_points"
 
 legend: "" {
   style: {
