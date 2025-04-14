@@ -1,11 +1,19 @@
 = Buurtnet
 
+The Buurtnet data product supports the following use cases by providing all
+required information:
 
+* Activate residents to balance their energy consumption and generation based
+on available data. By promoting self-organization and behavior change, we aim
+to reduce peak load and decrease voltage issues, thereby bridging the waiting
+time for neighbourhood-specific grid reinforcement.
+* Provide customers in critical neighborhoods with insight and actionable
+perspectives.
 
 .Data Product
 [d2,svg,theme=4]
 ----
-grid-rows: 5
+grid-rows: 10
 grid-columns: 5
 
 horizontal-gap: 160
@@ -17,6 +25,67 @@ vars: {
   }
 }
 
+1.class: empty
+2.class: empty
+3.class: empty
+4.class: empty
+ActivePowerLimit.class: grid
+
+5.class: empty
+6.class: empty
+7.class: empty
+Analog.class: grid
+OperationalLimitSet.class: grid
+
+BuurtnetDataSet.class: dataset
+GeographicalRegion.class: enterprise
+SubGeographicalRegion.class: enterprise
+Substation.class: grid
+PowerTransformer.class: grid
+
+8.class: empty
+9.class: empty
+10.class: empty
+11.class: empty
+TopologicalNode.class: grid
+
+12.class: empty
+13.class: empty
+14.class: empty
+Location.class: enterprise
+EnergyConsumer.class: grid
+
+15.class: empty
+16.class: empty
+17.class: empty
+18.class: empty
+MarketEvaluationPoint.class: market
+
+BuurtnetDataSet -> GeographicalRegion: "geographical_regions"
+GeographicalRegion -> SubGeographicalRegion: "regions"
+SubGeographicalRegion -> Substation: "substations"
+Substation -> PowerTransformer: "equipments"
+OperationalLimitSet -> ActivePowerLimit: "operational_limit_value"
+EnergyConsumer -> Location: "location"
+Substation -> Location: "location"
+PowerTransformer <-> TopologicalNode: {
+  label: "topological_node"
+  source-arrowhead.shape: circle
+}
+PowerTransformer <-> OperationalLimitSet: {
+  label: "operational_limit_set"
+  source-arrowhead.shape: circle
+}
+PowerTransformer <-> Analog: {
+  label: "measurements"
+  source-arrowhead.shape: circle
+}
+TopologicalNode <-> EnergyConsumer: {
+  label: "conducting_equipment"
+  source-arrowhead.shape: circle
+}
+EnergyConsumer -> Location: "location"
+EnergyConsumer -> MarketEvaluationPoint: "usage_points"
 
 legend: "" {
   style: {
